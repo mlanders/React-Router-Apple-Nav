@@ -1,11 +1,15 @@
 import React from 'react';
-import { SubIpad } from '../subMenu';
+import SubNav from '../SubNav';
 
-function Ipad() {
+function Ipad(props) {
 	return (
 		<React.Fragment>
-			<SubIpad />
-			<h1>Ipad Page</h1>
+			<div className="subNav">
+				{props.ipadData.map(item => (
+					<SubNav item={item} />
+				))}
+			</div>
+			<h1>iPad Page</h1>
 		</React.Fragment>
 	);
 }

@@ -1,10 +1,14 @@
 import React from 'react';
-import { SubMusic } from '../subMenu';
+import SubNav from '../SubNav';
 
-function Music() {
+function Music(props) {
 	return (
 		<React.Fragment>
-			<SubMusic />
+			<div className="subNav">
+				{props.musicData.map(item => (
+					<SubNav item={item} />
+				))}
+			</div>
 			<h1>Music Page</h1>
 		</React.Fragment>
 	);

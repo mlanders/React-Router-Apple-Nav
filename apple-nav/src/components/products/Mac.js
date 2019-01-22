@@ -1,10 +1,15 @@
 import React from 'react';
-import { SubMac } from '../subMenu';
+import SubNav from '../SubNav';
 
-function Mac() {
+function Mac(props) {
 	return (
 		<React.Fragment>
-			<SubMac />
+			<div className="subNav">
+				{props.macData.map(item => (
+					<SubNav item={item} />
+				))}{' '}
+			</div>
+
 			<h1>Mac Page</h1>
 		</React.Fragment>
 	);

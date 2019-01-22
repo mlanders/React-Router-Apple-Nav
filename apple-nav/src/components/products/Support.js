@@ -1,10 +1,14 @@
 import React from 'react';
-import { SubSupport } from '../subMenu';
+import SubNav from '../SubNav';
 
-function Support() {
+function Support(props) {
 	return (
 		<React.Fragment>
-			<SubSupport />
+			{/* <div className="subNav">
+				{props.supportData.map(item => (
+					<SubNav item={item} />
+				))}
+			</div> */}
 			<h1>Support Page</h1>
 		</React.Fragment>
 	);

@@ -1,10 +1,14 @@
 import React from 'react';
-import { SubTV } from '../subMenu';
+import SubNav from '../SubNav';
 
-function TV() {
+function TV(props) {
 	return (
 		<React.Fragment>
-			<SubTV />
+			<div className="subNav darkMode">
+				{props.tvData.map(item => (
+					<SubNav item={item} />
+				))}
+			</div>
 			<h1>TV Page</h1>
 		</React.Fragment>
 	);

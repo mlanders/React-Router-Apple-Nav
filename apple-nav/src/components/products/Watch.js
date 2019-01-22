@@ -1,10 +1,14 @@
 import React from 'react';
-import { SubWatch } from '../subMenu';
+import SubNav from '../SubNav';
 
-function Watch() {
+function Watch(props) {
 	return (
 		<React.Fragment>
-			<SubWatch />
+			<div className="subNav">
+				{props.watchData.map(item => (
+					<SubNav item={item} />
+				))}
+			</div>
 			<h1>Watch Page</h1>
 		</React.Fragment>
 	);

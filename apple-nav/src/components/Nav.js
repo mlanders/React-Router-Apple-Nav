@@ -7,6 +7,15 @@ import Watch from './products/Watch';
 import TV from './products/TV';
 import Music from './products/Music';
 import Support from './products/Support';
+import {
+	macData,
+	iphoneData,
+	ipadData,
+	watchData,
+	tvData,
+	musicData,
+	supportData,
+} from './menuData';
 
 function Nav() {
 	return (
@@ -25,12 +34,30 @@ function Nav() {
 				<NavLink to="/music">Music</NavLink>
 				<NavLink to="/support">Support</NavLink>
 			</div>
-			<Route path="/mac" render={props => <Mac {...props} />} />
-			<Route path="/ipad" render={props => <Ipad {...props} />} />
-			<Route path="/iphone" render={props => <Iphone {...props} />} />
-			<Route path="/watch" render={props => <Watch {...props} />} />
-			<Route path="/tv" render={props => <TV {...props} />} />
-			<Route path="/music" render={props => <Music {...props} />} />
+			<Route
+				path="/mac"
+				render={props => <Mac {...props} macData={macData} />}
+			/>
+			<Route
+				path="/ipad"
+				render={props => <Ipad {...props} ipadData={ipadData} />}
+			/>
+			<Route
+				path="/iphone"
+				render={props => <Iphone {...props} iphoneData={iphoneData} />}
+			/>
+			<Route
+				path="/watch"
+				render={props => <Watch {...props} watchData={watchData} />}
+			/>
+			<Route
+				path="/tv"
+				render={props => <TV {...props} tvData={tvData} />}
+			/>
+			<Route
+				path="/music"
+				render={props => <Music {...props} musicData={musicData} />}
+			/>
 			<Route path="/support" render={props => <Support {...props} />} />
 		</React.Fragment>
 	);
