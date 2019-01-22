@@ -1,0 +1,48 @@
+.NavWrapper {
+	display: flex;
+	flex-direction: column;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(45, 45, 45, 0.98);
+	color: white;
+	padding: 15px;
+}
+.nav a {
+	color: white;
+	text-decoration: none;
+}
+.nav a:visited {
+	color: white;
+}
+
+.subMenu {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(242, 242, 242, 0.7);
+	color: black;
+	padding: 15px;
+}
+.subMenu a {
+	color: black;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+}
+.subMenu a:visited {
+	color: black;
+}
+.subMenu img {
+	height: 40px;
+}
+
+.darkMode {
+	background-color: #141414;
+}
+.darkMode a {
+	color: white;
+}
+.darkMode a:visited {
+	color: white;
+}
