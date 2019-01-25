@@ -1,6 +1,7 @@
 export const macData = [
 	{
 		name: 'MacBook',
+		id: '1',
 		img:
 			'https://www.apple.com/v/mac/home/ae/images/familybrowser/macbook__fjd32xo0xwmm_large.svg',
 	},

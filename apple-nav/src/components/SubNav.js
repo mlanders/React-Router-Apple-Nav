@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function SubNav(props) {
 	return (
-		<NavLink to="/mac">
+		<NavLink to="/mac/:id">
 			<img src={props.item.img} alt={props.item.name} />
 			{props.item.name}
 		</NavLink>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, NavLink } from 'react-router-dom';
+import Product from './Product';
 import Mac from './products/Mac';
 import Iphone from './products/Iphone';
 import Ipad from './products/Ipad';
@@ -33,6 +34,12 @@ function Nav() {
 				<NavLink to="/tv">TV</NavLink>
 				<NavLink to="/music">Music</NavLink>
 				<NavLink to="/support">Support</NavLink>
+				<NavLink to="/">
+					<img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg" />
+				</NavLink>
+				<NavLink to="/">
+					<img src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg" />
+				</NavLink>
 			</div>
 			<Route
 				path="/mac"
@@ -59,6 +66,12 @@ function Nav() {
 				render={props => <Music {...props} musicData={musicData} />}
 			/>
 			<Route path="/support" render={props => <Support {...props} />} />
+
+			{/* Product Specific */}
+			<Route
+				path="/mac/:itemId"
+				render={props => <Product {...props} macData={macData} />}
+			/>
 		</React.Fragment>
 	);
 }
