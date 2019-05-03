@@ -1,0 +1,49 @@
+.NavWrapper {
+	display: flex;
+	flex-direction: column;
+}
+.nav {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(45, 45, 45, 0.98);
+	color: white;
+	padding: 0 20px;
+	align-items: center;
+}
+.nav a {
+	color: white;
+	text-decoration: none;
+}
+.nav a:visited {
+	color: white;
+}
+
+.subNav {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(242, 242, 242, 0.7);
+	color: black;
+	padding: 15px;
+}
+.subNav a {
+	color: black;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+}
+.subNav a:visited {
+	color: black;
+}
+.subNav img {
+	height: 40px;
+}
+
+.darkMode {
+	background-color: #141414;
+}
+.darkMode a {
+	color: white;
+}
+.darkMode a:visited {
+	color: white;
+}
